@@ -1,0 +1,62 @@
+{
+  "master_seed": 42,
+  "n_splits": 5,
+  "n_repeats": 3,
+  "missing_levels": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "val_fraction": 0.25,
+  "target_coverage": 0.8,
+  "knn_neighbors": 5,
+  "n_features": 13,
+  "tuning": {
+    "inner_folds": 3,
+    "criterion": "mean Brier score (lower is better)",
+    "search_trees_RF": 150,
+    "grids": {
+      "LR": [
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 10.0
+        }
+      ],
+      "RF": [
+        {
+          "min_samples_leaf": 10
+        },
+        {
+          "min_samples_leaf": 5
+        },
+        {
+          "min_samples_leaf": 3
+        },
+        {
+          "min_samples_leaf": 1
+        }
+      ]
+    }
+  },
+  "models": {
+    "LR": "LogisticRegression(C tuned, max_iter=2000)",
+    "RF": "RandomForestClassifier(n_estimators=300, min_samples_leaf tuned, random_state=42)",
+    "Majority": "DummyClassifier(strategy='prior')"
+  },
+  "python": "3.12.3",
+  "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+  "numpy": "2.3.1",
+  "pandas": "2.3.0",
+  "scikit_learn": "1.7.1"
+}

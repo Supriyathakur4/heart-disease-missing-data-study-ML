@@ -1,0 +1,103 @@
+{
+  "source_file": "data_raw/processed.cleveland.data (UCI Heart Disease, Cleveland subset)",
+  "rows": 303,
+  "feature_columns": [
+    "Age",
+    "RestingBP",
+    "Cholesterol",
+    "MaxHR",
+    "Oldpeak",
+    "NumVessels",
+    "Sex",
+    "ExerciseAngina",
+    "FastingBS",
+    "ChestPainType",
+    "RestingECG",
+    "ST_Slope",
+    "Thal"
+  ],
+  "n_features": 13,
+  "class_counts": {
+    "no_disease(0)": 164,
+    "disease(1)": 139
+  },
+  "original_severity_counts_num_0_to_4": {
+    "0": 164,
+    "1": 55,
+    "2": 36,
+    "3": 35,
+    "4": 13
+  },
+  "majority_class_share": 0.5412541254125413,
+  "native_missing_cells_by_feature": {
+    "NumVessels": 4,
+    "Thal": 2
+  },
+  "native_missing_cells_total": 6,
+  "native_missing_cell_rate": 0.0015232292460015233,
+  "rows_with_any_native_missing": 6,
+  "zero_cholesterol_rows": 0,
+  "zero_restingbp_rows": 0,
+  "numeric_summary": {
+    "Age": {
+      "count": 303.0,
+      "mean": 54.44,
+      "std": 9.04,
+      "min": 29.0,
+      "25%": 48.0,
+      "50%": 56.0,
+      "75%": 61.0,
+      "max": 77.0
+    },
+    "RestingBP": {
+      "count": 303.0,
+      "mean": 131.69,
+      "std": 17.6,
+      "min": 94.0,
+      "25%": 120.0,
+      "50%": 130.0,
+      "75%": 140.0,
+      "max": 200.0
+    },
+    "Cholesterol": {
+      "count": 303.0,
+      "mean": 246.69,
+      "std": 51.78,
+      "min": 126.0,
+      "25%": 211.0,
+      "50%": 241.0,
+      "75%": 275.0,
+      "max": 564.0
+    },
+    "MaxHR": {
+      "count": 303.0,
+      "mean": 149.61,
+      "std": 22.88,
+      "min": 71.0,
+      "25%": 133.5,
+      "50%": 153.0,
+      "75%": 166.0,
+      "max": 202.0
+    },
+    "Oldpeak": {
+      "count": 303.0,
+      "mean": 1.04,
+      "std": 1.16,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.8,
+      "75%": 1.6,
+      "max": 6.2
+    },
+    "NumVessels": {
+      "count": 299.0,
+      "mean": 0.67,
+      "std": 0.94,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 3.0
+    }
+  }
+}
